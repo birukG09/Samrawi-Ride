@@ -2,7 +2,7 @@
 
 > "Free rides. Rooted in faith. Built for Ethiopia."
 >
-> Inspired by the Parable of the Good Samaritan — Luke 10:25-37
+>
 
 An Ethiopian community carpooling platform connecting drivers with empty seats to passengers who need a free ride, matched by shared route and location. Built as a Java console application demonstrating core OOP concepts.
 
