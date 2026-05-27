@@ -1,4 +1,4 @@
-# ሳምራዊ Samrawi Ride
+# ሳምራዊ Samrawi Rode
 
 > "Free rides. Rooted in faith. Built for Ethiopia."
 >
