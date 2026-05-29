@@ -5,7 +5,22 @@
 >
 
 An Ethiopian community carpooling platform connecting drivers with empty seats to passengers who need a free ride, matched by shared route and location. Built as a Java console application demonstrating core OOP concepts.
-
+| Concept | Material | File | Lines | Note |
+|---|---|---|---|---|
+| Classes & Objects | V1.0, V2.0 | `persons/Person.java` | 1–45 | Base class modeling a real person |
+| Encapsulation | V1.0, V2.0 | `persons/User.java` | 10–60 | `private` fields with validated getters/setters; `password` hashed and never exposed |
+| Encapsulation | V2.0 | `persons/Person.java` | 12 | `nationalID` is private — stored for verification, never printed |
+| Encapsulation | V2.0 | `persons/NewDriver.java` | 30 | `safetyScore` setter validates range 0.0–5.0 |
+| Inheritance (3-level) | V3.0 | `persons/Driver.java` | 1 | `Driver extends User extends Person` |
+| Inheritance (4-level) | V3.0 | `persons/VerifiedDriver.java` | 1 | `VerifiedDriver extends Driver extends User extends Person` |
+| Inheritance (4-level) | V3.0 | `persons/PriorityPassenger.java` | 1 | `PriorityPassenger extends Passenger extends User extends Person` |
+| Method Overriding | V4.0 | `persons/Driver.java` | ~55 | `@Override displayProfile()` — shows vehicle + routes |
+| Method Overriding | V4.0 | `persons/VerifiedDriver.java` | ~25 | `@Override displayProfile()` — shows verification badge |
+| Method Overriding | V4.0 | `persons/PriorityPassenger.java` | ~20 | `@Override requestRide()` — jumps to front of queue |
+| Method Overriding | V4.0 | `rides/ScheduledRide.java` | ~30 | `@Override confirmRide()` — sends scheduled reminder |
+| Method Overriding | V4.0 | `rides/InstantRide.java` | ~20 | `@Override confirmRide()` — immediate dispatch |
+| Method Overloading | V4.0 | `system/ReportGenerator.java` | 10–60 | 3 overloaded `generateReport()` — full / by area / by month |
+| Superclass Reference | V4.0 | `Main.java` | ~55 | `User[] users = { new VerifiedDriver(...), new RegularPassenger(...), ... }` |
 ---
 
  ## OOP Concepts Used
